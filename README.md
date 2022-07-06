@@ -43,7 +43,9 @@ Key Stakeholder:
 ### Data Limitations:
 
 -Data was collected in 2016. Users's daily activities, sleeping habits, diet, food consumptions may not be relevant now
+
 -Only 30 users is available.  Sample sizes equal to or greater than 30 are often considered sufficient for the CLT to hold. For more accurate analysis, a larger sample size is prefered. 
+
 -Data was collected from a survey, unable to ascertain its integrity and accuracy.
 
 

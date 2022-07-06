@@ -55,5 +55,11 @@ Comprehensive — LOW — The sample size is small and most data is recorded dur
 Current — LOW — Not current, and may not be relevant
 Cited — LOW — Collection party unknown
 
+## 3. Process
 
+## 4. Analyze
+
+## 5. Share 
+
+## 6. Act
 

@@ -51,9 +51,13 @@ Key Stakeholder:
 A good data source should follow ROCCC guidline.
 
 -Reliable — LOW — Not reliable as it only has 30 users data
+
 -Original — LOW — Third party provider (Amazon Mechanical Turk)
+
 -Comprehensive — LOW — The sample size is small and most data is recorded during certain days of the week
+
 -Current — LOW — Not current, and may not be relevant
+
 -Cited — LOW — Collection party unknown
 
 ## 3. Process

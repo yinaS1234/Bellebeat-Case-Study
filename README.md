@@ -899,12 +899,14 @@ Supporting visualizations and key findings
 
 ### 2. Recommendatios
 
-Since both Fitbit and Bellebeat are in the similar sector- health focused product for women, these data insights can be applied to Bellebeart customers, however, more data is needed for more relevant analysis. 
+Since both Fitbit and Bellebeat are in the similar sector- high tech health focused product for women, these data insights can be applied to Bellebeart customers, however, more data is needed for more relevant analysis. 
 
 
 <img width="1097" alt="Screen Shot 2022-07-07 at 3 29 24 PM" src="https://user-images.githubusercontent.com/108648130/177882078-4bb70222-bbf5-443f-9040-e12a69e154f5.png">
 
 
+
+Cited
 
 
 

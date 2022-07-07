@@ -67,18 +67,29 @@ A good data source should follow ROCCC guidline.
 
 This process aims to clean data and ensuring that it is accurate, relevant, complete and free of outlier through following steps:
 
-- Explore and observe data
+   - Explore and observe data
 
-- Check for and treat missing or null values
+   - Check for and treat missing or null values
 
--Transform data — format data type
 
--Perform preliminary statistical analysis
+   - Transform data — format data type
+
+   - Perform preliminary statistical analysis
+
 
 ## 4. Analyze
 A summary of your analysis
 
+
+
+
+
+
 ## 5. Share 
+
+
+
+
 
 
 ## 6. Act

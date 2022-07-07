@@ -148,6 +148,10 @@ sapply(weightLogInfo, function(x) length(unique(x)))
 
 ```
 
+<img width="440" alt="Screen Shot 2022-07-07 at 11 08 10 AM" src="https://user-images.githubusercontent.com/108648130/177840632-e2c51e10-ebbd-4f17-905e-14ad2e4d892c.png">
+
+<img width="492" alt="Screen Shot 2022-07-07 at 11 08 30 AM" src="https://user-images.githubusercontent.com/108648130/177840635-d717ee98-4ad6-4140-99e6-fbaa1d0dd353.png">
+
 There are 33 unique IDs, 24 unique IDs in sleepDay, 8 unique IDs in weightlogInfor
 
 

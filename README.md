@@ -91,6 +91,9 @@ library(ggpubr)
 ![image](https://github.com/yinaS1234/Bellebeat-Case-Study/blob/main/Screen%20Shot%202022-07-06%20at%206.23.09%20PM.png)
 
 
+<img width="1246" alt="Screen Shot 2022-07-06 at 6 23 09 PM" src="https://user-images.githubusercontent.com/108648130/177672009-a56c2d11-0aa0-40d1-975c-555eb67bd6eb.png">
+
+
 # exploring data. read following dataframe for our analysis
 ```
 dailyActivity <- read_csv("bellebeat data/Fitabase Data 4.12.16-5.12.16/dailyActivity_merged.csv")

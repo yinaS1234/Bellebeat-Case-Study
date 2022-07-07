@@ -676,17 +676,68 @@ summary(merge_data)
  NA's   :873   
 ```
 
-  The summary shows:
----On average, users logged 7,638 steps.  CDC recommend that most adults aim for 10,000 steps per day For most people, this is the equivalent of about 8 kilometers, or 5 miles. Source: [Medical News Today] (https://www.medicalnewstoday.com/articles/how-many-steps-should-you-take-a-day)
+
+The summary shows:
+
+
+---On average, users logged 7,638 steps.  CDC recommend that most adults aim for 10,000 steps per day For most people, this is the equivalent of about 8 kilometers, or 5 miles. Source: [Medical News Today](https://www.medicalnewstoday.com/articles/how-many-steps-should-you-take-a-day)
 
 ---On Average, users spent 991 minutes in sedentary mode or 16.9 hours making up 81% of total average minutes.
 
---On average, user sleep about 419 minutes, about 6.98 h. National Sleep Foundation advise that healthy adults need between 7 and 9 hours of sleep per night. Source:[Sleep Foundation ](https://www.sleepfoundation.org/how-sleep-works/how-much-sleep-do-we-really-need)
+--On average, users sleep about 419 minutes, about 6.98 h. National Sleep Foundation advise that healthy adults need between 7 and 9 hours of sleep per night. Source:[Sleep Foundation ](https://www.sleepfoundation.org/how-sleep-works/how-much-sleep-do-we-really-need)
 
-alories burned is 2,303 calories equivalent to 0.6 pound. Could not interpret into detail as calories burned depend on several factors such as the age, weight, daily tasks, exercise, hormones and daily calorie intake. Source: Health Line article
+
 
 
 #### Active Minutes
+
+Q1. more active, more calories burn?
+
+## coeff of very active minutes vs calories 0.62
+
+ggscatter(merge_data, x = "very_active_minutes", y = "calories", 
+          add = "reg.line", conf.int = TRUE, 
+          cor.coef = TRUE, cor.method = "pearson",
+          xlab = "VeryActiveMinutes", ylab = "Calories")
+c1 <- cor.test(merge_data$very_active_minutes, merge_data$calories, 
+                method = "pearson")
+c1
+
+
+
+## coef=0.3 fairly_active_minutes vs calories
+
+ggscatter(merge_data, x = "fairly_active_minutes", y = "calories", 
+          add = "reg.line", conf.int = TRUE, 
+          cor.coef = TRUE, cor.method = "pearson",
+          xlab = "FairlyActiveMinutes", ylab = "Calories")
+c2 <- cor.test(merge_data$fairly_active_minutes, merge_data$calories, 
+               method = "pearson")
+c2
+
+##  coef=0.29 lightly_active_minutes vs calories
+
+ggscatter(merge_data, x = "lightly_active_minutes", y = "calories", 
+          add = "reg.line", conf.int = TRUE, 
+          cor.coef = TRUE, cor.method = "pearson",
+          xlab = "LightlyActiveMinutes", ylab = "Calories")
+c3 <- cor.test(merge_data$lightly_active_minutes, merge_data$calories, 
+               method = "pearson")
+c3
+
+
+## coef= -0.1   sedentary minutes vs calories
+
+ggscatter(merge_data, x = "sedentary_minutes", y = "calories", 
+          add = "reg.line", conf.int = TRUE, 
+          cor.coef = TRUE, cor.method = "pearson",
+          xlab = "SedentaryyActiveMinutes", ylab = "Calories")
+c4 <- cor.test(merge_data$sedentary_minutes, merge_data$calories, 
+               method = "pearson")
+c4
+
+
+
 
 #### Total Steps
 

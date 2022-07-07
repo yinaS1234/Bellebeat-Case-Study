@@ -580,10 +580,108 @@ ggplot(data=merge_data, aes(x=weekday))+
 ```
 
 
-The below record count shows most activities are recorded during the week especially on Tue., Wed.,Thurs.
+The record count shows most activities are recorded during the week especially on Tue., Wed.,Thurs.
+
 
 ![Rplot](https://user-images.githubusercontent.com/108648130/177868458-f8e597b5-9147-4c2d-9f88-58ffad5f39b8.png)
 
+
+
+```
+summary(merge_data)
+```
+
+
+```
+> summary(merge_data)
+       id                 date             total_steps   
+ Min.   :1.504e+09   Min.   :2016-04-12   Min.   :    0  
+ 1st Qu.:2.320e+09   1st Qu.:2016-04-19   1st Qu.: 3790  
+ Median :4.445e+09   Median :2016-04-26   Median : 7406  
+ Mean   :4.855e+09   Mean   :2016-04-26   Mean   : 7638  
+ 3rd Qu.:6.962e+09   3rd Qu.:2016-05-04   3rd Qu.:10727  
+ Max.   :8.878e+09   Max.   :2016-05-12   Max.   :36019  
+                                                         
+ total_distance   tracker_distance logged_activities_distance
+ Min.   : 0.000   Min.   : 0.000   Min.   :0.0000            
+ 1st Qu.: 2.620   1st Qu.: 2.620   1st Qu.:0.0000            
+ Median : 5.245   Median : 5.245   Median :0.0000            
+ Mean   : 5.490   Mean   : 5.475   Mean   :0.1082            
+ 3rd Qu.: 7.713   3rd Qu.: 7.710   3rd Qu.:0.0000            
+ Max.   :28.030   Max.   :28.030   Max.   :4.9421            
+                                                             
+ very_active_distance moderately_active_distance
+ Min.   : 0.000       Min.   :0.0000            
+ 1st Qu.: 0.000       1st Qu.:0.0000            
+ Median : 0.210       Median :0.2400            
+ Mean   : 1.503       Mean   :0.5675            
+ 3rd Qu.: 2.053       3rd Qu.:0.8000            
+ Max.   :21.920       Max.   :6.4800            
+                                                
+ light_active_distance sedentary_active_distance
+ Min.   : 0.000        Min.   :0.000000         
+ 1st Qu.: 1.945        1st Qu.:0.000000         
+ Median : 3.365        Median :0.000000         
+ Mean   : 3.341        Mean   :0.001606         
+ 3rd Qu.: 4.782        3rd Qu.:0.000000         
+ Max.   :10.710        Max.   :0.110000         
+                                                
+ very_active_minutes fairly_active_minutes
+ Min.   :  0.00      Min.   :  0.00       
+ 1st Qu.:  0.00      1st Qu.:  0.00       
+ Median :  4.00      Median :  6.00       
+ Mean   : 21.16      Mean   : 13.56       
+ 3rd Qu.: 32.00      3rd Qu.: 19.00       
+ Max.   :210.00      Max.   :143.00       
+                                          
+ lightly_active_minutes sedentary_minutes    calories   
+ Min.   :  0.0          Min.   :   0.0    Min.   :   0  
+ 1st Qu.:127.0          1st Qu.: 729.8    1st Qu.:1828  
+ Median :199.0          Median :1057.5    Median :2134  
+ Mean   :192.8          Mean   : 991.2    Mean   :2304  
+ 3rd Qu.:264.0          3rd Qu.:1229.5    3rd Qu.:2793  
+ Max.   :518.0          Max.   :1440.0    Max.   :4900  
+                                                        
+ weekday   total_sleep_records total_minutes_asleep
+ Sun:121   Min.   :1.000       Min.   : 58.0       
+ Mon:120   1st Qu.:1.000       1st Qu.:361.0       
+ Tue:152   Median :1.000       Median :432.5       
+ Wed:150   Mean   :1.119       Mean   :419.2       
+ Thu:147   3rd Qu.:1.000       3rd Qu.:490.0       
+ Fri:126   Max.   :3.000       Max.   :796.0       
+ Sat:124   NA's   :530         NA's   :530         
+ total_time_in_bed   weight_kg      weight_pounds  
+ Min.   : 61.0     Min.   : 52.60   Min.   :116.0  
+ 1st Qu.:403.8     1st Qu.: 61.40   1st Qu.:135.4  
+ Median :463.0     Median : 62.50   Median :137.8  
+ Mean   :458.5     Mean   : 72.04   Mean   :158.8  
+ 3rd Qu.:526.0     3rd Qu.: 85.05   3rd Qu.:187.5  
+ Max.   :961.0     Max.   :133.50   Max.   :294.3  
+ NA's   :530       NA's   :873      NA's   :873    
+      fat             bmi        is_manual_report
+ Min.   :22.00   Min.   :21.45   Mode :logical   
+ 1st Qu.:22.75   1st Qu.:23.96   FALSE:26        
+ Median :23.50   Median :24.39   TRUE :41        
+ Mean   :23.50   Mean   :25.19   NA's :873       
+ 3rd Qu.:24.25   3rd Qu.:25.56                   
+ Max.   :25.00   Max.   :47.54                   
+ NA's   :938     NA's   :873                     
+     log_id         
+ Min.   :1.460e+12  
+ 1st Qu.:1.461e+12  
+ Median :1.462e+12  
+ Mean   :1.462e+12  
+ 3rd Qu.:1.462e+12  
+ Max.   :1.463e+12  
+ NA's   :873   
+```
+
+The summary shows:
+On average, users logged 7,638 steps.  CDC recommend that most adults aim for 10,000 steps per day For most people, this is the equivalent of about 8 kilometers, or 5 miles. Source: Medical News Today (https://www.medicalnewstoday.com/articles/how-many-steps-should-you-take-a-day)
+
+Sedentary users are the majority logging on average 991 minutes or 20 hours making up 81% of total average minutes.
+
+Noting that average calories burned is 2,303 calories equivalent to 0.6 pound. Could not interpret into detail as calories burned depend on several factors such as the age, weight, daily tasks, exercise, hormones and daily calorie intake. Source: Health Line article
 
 
 #### Active Minutes

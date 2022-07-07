@@ -579,6 +579,9 @@ ggplot(data=merge_data, aes(x=weekday))+
   geom_bar(fill="steelblue")
 ```
 
+
+The below record count shows most activities are recorded during the week especially on Tue., Wed.,Thurs.
+
 ![Rplot](https://user-images.githubusercontent.com/108648130/177868458-f8e597b5-9147-4c2d-9f88-58ffad5f39b8.png)
 
 

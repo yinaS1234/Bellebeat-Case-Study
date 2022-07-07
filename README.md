@@ -676,12 +676,14 @@ summary(merge_data)
  NA's   :873   
 ```
 
-The summary shows:
-On average, users logged 7,638 steps.  CDC recommend that most adults aim for 10,000 steps per day For most people, this is the equivalent of about 8 kilometers, or 5 miles. Source: Medical News Today (https://www.medicalnewstoday.com/articles/how-many-steps-should-you-take-a-day)
+  The summary shows:
+---On average, users logged 7,638 steps.  CDC recommend that most adults aim for 10,000 steps per day For most people, this is the equivalent of about 8 kilometers, or 5 miles. Source: [Medical News Today] (https://www.medicalnewstoday.com/articles/how-many-steps-should-you-take-a-day)
 
-Sedentary users are the majority logging on average 991 minutes or 20 hours making up 81% of total average minutes.
+---On Average, users spent 991 minutes in sedentary mode or 16.9 hours making up 81% of total average minutes.
 
-Noting that average calories burned is 2,303 calories equivalent to 0.6 pound. Could not interpret into detail as calories burned depend on several factors such as the age, weight, daily tasks, exercise, hormones and daily calorie intake. Source: Health Line article
+--On average, user sleep about 419 minutes, about 6.98 h. National Sleep Foundation advise that healthy adults need between 7 and 9 hours of sleep per night. Source:[Sleep Foundation ](https://www.sleepfoundation.org/how-sleep-works/how-much-sleep-do-we-really-need)
+
+alories burned is 2,303 calories equivalent to 0.6 pound. Could not interpret into detail as calories burned depend on several factors such as the age, weight, daily tasks, exercise, hormones and daily calorie intake. Source: Health Line article
 
 
 #### Active Minutes

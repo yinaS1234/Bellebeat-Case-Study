@@ -694,7 +694,7 @@ The summary shows:
 Q1. more active, more calories burn?
 
 ## coeff of very active minutes vs calories 0.62
-
+```
 ggscatter(merge_data, x = "very_active_minutes", y = "calories", 
           add = "reg.line", conf.int = TRUE, 
           cor.coef = TRUE, cor.method = "pearson",
@@ -702,6 +702,10 @@ ggscatter(merge_data, x = "very_active_minutes", y = "calories",
 c1 <- cor.test(merge_data$very_active_minutes, merge_data$calories, 
                 method = "pearson")
 c1
+```
+
+![veryactivevs calories](https://user-images.githubusercontent.com/108648130/177872804-c92cf635-b8e8-4314-8bd6-decf73fe304e.png)
+
 
 
 

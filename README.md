@@ -693,7 +693,7 @@ The summary shows:
 
 Q1. more active, more calories burn?
 
-#### coeff of very active minutes vs calories 0.62
+#### coeff=0.62 very active minutes vs calories
 ```
 ggscatter(merge_data, x = "very_active_minutes", y = "calories", 
           add = "reg.line", conf.int = TRUE, 
@@ -709,7 +709,7 @@ c1
 
 
 
-#### coef=0.3 fairly_active_minutes vs calories
+#### coeff=0.3 fairly_active_minutes vs calories
 ```
 ggscatter(merge_data, x = "fairly_active_minutes", y = "calories", 
           add = "reg.line", conf.int = TRUE, 
@@ -723,7 +723,7 @@ c2
 
 
 
-####  coef=0.29 lightly_active_minutes vs calories
+####  coeff=0.29 lightly_active_minutes vs calories
 
 ```
 ggscatter(merge_data, x = "lightly_active_minutes", y = "calories", 
@@ -738,7 +738,7 @@ c3
 ![lightlyactive vs calories](https://user-images.githubusercontent.com/108648130/177873223-b71a0317-c76c-4536-ab45-7eb06c37ef23.png)
 
 
-#### coef= -0.1   sedentary minutes vs calories
+#### coeff= -0.1   sedentary minutes vs calories
 
 ```
 ggscatter(merge_data, x = "sedentary_minutes", y = "calories", 
@@ -754,7 +754,51 @@ c4
 
 
 
+The above Pearson Correlation testing shows, the coefficient increases as the users become more active.
+
+
+Q2. How Active Total? 
+
+
+```
+sedentary <-mean(merge_data$sedentary_minutes)
+veryactive <- mean(merge_data$very_active_minutes)
+lightactive <- mean(merge_data$lightly_active_minutes)
+fairlyactive <- mean(merge_data$fairly_active_minutes)
+
+minutes <-c(sedentary, veryactive,lightactive, fairlyactive)
+
+intensity <- c('Sedentary','VeryActive','LightlyActive','FairlyActive')
+
+piedf<- data.frame(intensity,minutes)
+
+slices <- c(sedentary,veryactive,lightactive,fairlyactive)
+lbls <- c("Sedentary", "VeryActive", "LightlyActive","FairlyActive")
+pct <- round(slices/sum(slices)*100)
+lbls <- paste(lbls, pct) # add percents to labels
+lbls <- paste(lbls,"%",sep="") # ad % to labels
+pie(slices,labels = lbls, col=rainbow(length(lbls)),
+    main="How Active Total")
+```
+
+
+
+
+```
+ggplot(piedf, aes(intensity, minutes)) +
+  geom_col(fill="steelblue")+
+  ggtitle("How Active Daily")
+
+```
+
+
+
+
+
 #### Total Steps
+
+
+
 
 #### Sleep
 

@@ -908,5 +908,7 @@ Since both Fitbit and Bellebeat are in the similar sector- high tech health focu
 
 Cited
 
+<img width="1110" alt="Screen Shot 2022-07-07 at 3 41 52 PM" src="https://user-images.githubusercontent.com/108648130/177883304-b2d741cd-e073-4931-bed7-cc010b106135.png">
+
 
 

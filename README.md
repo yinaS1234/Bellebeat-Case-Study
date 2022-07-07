@@ -557,10 +557,30 @@ write_csv(merge_data, "merge_data.csv")
 
 
 ## 4. Analyze
-A summary of your analysis
+
+
+-  [Summary](#summary)
+-  [Active Minutes](#active-minutes)
+-  [Total Steps](#total-steps)
+-  [Sleep](#Sleep)
+
+
+
+
+###. summary record, summary
 
 ggplot(data=merge_data, aes(x=weekday))+
   geom_bar(fill="steelblue")
+
+
+###. active minutes
+
+###. total steps
+
+###. sleep
+
+
+
 
 
 

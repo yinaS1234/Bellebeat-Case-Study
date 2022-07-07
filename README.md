@@ -782,6 +782,7 @@ pie(slices,labels = lbls, col=rainbow(length(lbls)),
 ```
 
 
+![how active total](https://user-images.githubusercontent.com/108648130/177875857-2ebfefbd-1137-43b3-adb0-dd1c401cc43d.png)
 
 
 ```
@@ -790,7 +791,7 @@ ggplot(piedf, aes(intensity, minutes)) +
   ggtitle("How Active Daily")
 
 ```
-
+![how active daily](https://user-images.githubusercontent.com/108648130/177875845-421f6bb9-558d-486a-ba30-b1d8199a4a77.png)
 
 
 

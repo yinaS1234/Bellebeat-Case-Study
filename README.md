@@ -90,7 +90,7 @@ library(ggpubr)
 ```
 
 # exploring data. read following dataframe for our analysis
-
+```
 dailyActivity <- read_csv("bellebeat data/Fitabase Data 4.12.16-5.12.16/dailyActivity_merged.csv")
 View(dailyActivity)
 
@@ -108,9 +108,10 @@ View(sleepDay)
 
 weightLogInfo <- read_csv("bellebeat data/Fitabase Data 4.12.16-5.12.16/weightLogInfo_merged.csv")
 View(weightLogInfo)
-
+```
 
 # closer look at data
+```
 summary(dailyActivity)
 str(dailyActivity)
 
@@ -128,9 +129,9 @@ str(sleepDay)
 
 summary(weightLogInfo)
 str(weightLogInfo)
-
+```
 #distinct entries in all columns
-
+```
 sapply(dailyActivity, function(x) length(unique(x)))
 sapply(dailyCalories, function(x) length(unique(x)))
 sapply(dailyIntensities, function(x) length(unique(x)))
@@ -138,7 +139,7 @@ sapply(dailySteps, function(x) length(unique(x)))
 sapply(sleepDay, function(x) length(unique(x)))
 sapply(weightLogInfo, function(x) length(unique(x)))
 
-
+```
 
 ## 4. Analyze
 A summary of your analysis

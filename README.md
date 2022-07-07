@@ -800,6 +800,8 @@ ggplot(piedf, aes(intensity, minutes)) +
 
 tableau viz
 
+<img width="875" alt="Screen Shot 2022-07-07 at 2 52 54 PM" src="https://user-images.githubusercontent.com/108648130/177877809-1f079c2c-3d1b-4b70-8c06-8f25646aca9b.png">
+
 
 
 

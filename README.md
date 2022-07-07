@@ -87,6 +87,8 @@ install.packages("ggpubr")
 library(tidyverse)
 library(ggplot2)
 library(ggpubr)
+
+https://github.com/yinaS1234/Bellebeat-Case-Study/blob/main/Screen%20Shot%202022-07-06%20at%206.23.09%20PM.png
 ```
 
 # exploring data. read following dataframe for our analysis

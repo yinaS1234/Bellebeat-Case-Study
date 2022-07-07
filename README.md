@@ -832,6 +832,8 @@ s4
 Create a new column by combining "very active" " lightly active" "fairly active" into "total active minutes"
 
 
+
+```
 merge_data$total_active_minutes <- merge_data$very_active_minutes+merge_data$lightly_active_minutes+merge_data$fairly_active_minutes
 
 ## coeff= -0.069  total active minutes vs sleep
@@ -858,6 +860,7 @@ However, it shows users who spend less time in sedentary minute tends to have mo
 
 ## 5. Share 
 
+[Tableau Dashboard]
 
 
 

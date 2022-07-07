@@ -848,8 +848,7 @@ s5
 ```
 
 
-![totalactiveminute vs sleep](https://user-images.githubusercontent.com/108648130/177878440-ba1e14c4-0005-4a15-97ee-d0d13c78217b.png)
-
+![totalactiveminute vs sleep](https://user-images.githubusercontent.com/108648130/177879975-a79b7109-e0bb-43e3-af5d-90ce3f0f8aee.png)
 
 
 The coefficient between total active minutes and sleep is trivial, sleep is not correlated to active minute

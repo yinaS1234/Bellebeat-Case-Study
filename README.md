@@ -798,6 +798,10 @@ ggplot(piedf, aes(intensity, minutes)) +
 
 #### Total Steps
 
+tableau viz
+
+
+
 
 
 

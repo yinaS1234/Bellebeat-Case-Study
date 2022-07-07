@@ -837,6 +837,7 @@ Create a new column by combining "very active" " lightly active" "fairly active"
 merge_data$total_active_minutes <- merge_data$very_active_minutes+merge_data$lightly_active_minutes+merge_data$fairly_active_minutes
 
 ## coeff= -0.069  total active minutes vs sleep
+```
 ggscatter(merge_data, x = "total_active_minutes", y = "total_minutes_asleep", 
           add = "reg.line", conf.int = TRUE, 
           cor.coef = TRUE, cor.method = "pearson",

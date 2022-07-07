@@ -10,6 +10,8 @@
 Langauage used: R
 
 
+
+
 _The case study follows the six steps of data analysis process:_
 
 ### [Ask](#1-ask)
@@ -68,14 +70,16 @@ A good data source should follow ROCCC guidline.
 
 This process aims to clean data to make sure it is accurate, relevant, complete and free of outlier by the following steps:
 
-   - Explore and observe data
+      - Explore and observe data
 
-   - Identify and treat missing, null values and duplicates
+      - Identify and treat missing, null values and duplicates
 
 
-   - Transform data — format data type, consistent column names, create one merged file
+      - Transform data — format data type, consistent column names, create one merged file
 
-   - Perform preliminary statistical analysis
+      - Perform preliminary statistical analysis
+
+
 
 
 #### install various R packages

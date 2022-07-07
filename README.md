@@ -810,6 +810,8 @@ Q.more active, more sleep?
 
 
 ## coeff of sedentary minutes vs sleep is -0.6
+
+```
 ggscatter(merge_data, x = "sedentary_minutes", y = "total_minutes_asleep", 
           add = "reg.line", conf.int = TRUE, 
           cor.coef = TRUE, cor.method = "pearson",
@@ -818,8 +820,13 @@ ggscatter(merge_data, x = "sedentary_minutes", y = "total_minutes_asleep",
 s4 <- cor.test(merge_data$sedentary_minutes, merge_data$total_minutes_asleep, 
                method = "pearson")
 s4
+```
 
 
+![sedentary minute vs sleep](https://user-images.githubusercontent.com/108648130/177878437-cb892e0f-f102-40ac-9e8e-487fe2030d45.png)
+
+
+```
 merge_data$total_active_minutes <- merge_data$very_active_minutes+merge_data$lightly_active_minutes+merge_data$fairly_active_minutes
 
 ## coeff of total active minutes vs sleep is -0.069
@@ -831,8 +838,9 @@ ggscatter(merge_data, x = "total_active_minutes", y = "total_minutes_asleep",
 s5 <- cor.test(merge_data$total_active_minutes, merge_data$total_minutes_asleep, 
                method = "pearson")
 s5
+```
 
-
+![totalactiveminute vs sleep](https://user-images.githubusercontent.com/108648130/177878440-ba1e14c4-0005-4a15-97ee-d0d13c78217b.png)
 
 
 

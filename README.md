@@ -809,7 +809,7 @@ tableau viz
 Q.more active, more sleep? 
 
 
-## coeff of sedentary minutes vs sleep is -0.6
+## coeff= -0.6  sedentary minutes vs sleep 
 
 ```
 ggscatter(merge_data, x = "sedentary_minutes", y = "total_minutes_asleep", 
@@ -827,9 +827,14 @@ s4
 
 
 ```
+
+
+Create a new column by combining "very active" " lightly active" "fairly active" into "total active minutes"
+
+
 merge_data$total_active_minutes <- merge_data$very_active_minutes+merge_data$lightly_active_minutes+merge_data$fairly_active_minutes
 
-## coeff of total active minutes vs sleep is -0.069
+## coeff= -0.069  total active minutes vs sleep
 ggscatter(merge_data, x = "total_active_minutes", y = "total_minutes_asleep", 
           add = "reg.line", conf.int = TRUE, 
           cor.coef = TRUE, cor.method = "pearson",
@@ -841,6 +846,13 @@ s5
 ```
 
 ![totalactiveminute vs sleep](https://user-images.githubusercontent.com/108648130/177878440-ba1e14c4-0005-4a15-97ee-d0d13c78217b.png)
+
+
+
+The coefficient between total active minutes and sleep is trivial, sleep is not correlated to active minute
+
+However, it shows users who spend less time in sedentary minute tends to have more sleep. 
+
 
 
 

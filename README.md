@@ -870,9 +870,30 @@ Tableau Dashboard
 
 
 
-
 ## 6. Act
+-  [Trends](#trends)
+-  [Recommendations](#recommendations)
 
 Supporting visualizations and key findings
+
+### 1.Trends
+---On average, users logged 7,638 steps.  CDC recommend that most adults aim for 10,000 steps per day For most people, this is the equivalent of about 8 kilometers, or 5 miles. Source: [Medical News Today](https://www.medicalnewstoday.com/articles/how-many-steps-should-you-take-a-day)
+
+---On Average, users spent 991 minutes in sedentary mode or 16.9 hours making up 81% of total average minutes.
+
+--On average, users sleep about 419 minutes, about 6.98 h. National Sleep Foundation advise that healthy adults need between 7 and 9 hours of sleep per night. Source:[Sleep Foundation ](https://www.sleepfoundation.org/how-sleep-works/how-much-sleep-do-we-really-need)
+
+--- Users tend to track their activities more frenquently on weekday as opposed to weekends. 
+
+
+
+### 2. Recommendatios
+
+Since both Fitbit and Bellebeat are in the similar sector- health focused product for women, these data insights can be applied to Bellebeart customers, however, more data is needed for more relevant analysis. 
+
+
+
+
+
 
 

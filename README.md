@@ -719,6 +719,8 @@ c2 <- cor.test(merge_data$fairly_active_minutes, merge_data$calories,
                method = "pearson")
 c2
 ```
+![fairlyactive vs calories](https://user-images.githubusercontent.com/108648130/177873211-dc7aa685-0fe3-49a5-9482-36981349c1d2.png)
+
 
 
 ####  coef=0.29 lightly_active_minutes vs calories
@@ -733,6 +735,9 @@ c3 <- cor.test(merge_data$lightly_active_minutes, merge_data$calories,
 c3
 ```
 
+![lightlyactive vs calories](https://user-images.githubusercontent.com/108648130/177873223-b71a0317-c76c-4536-ab45-7eb06c37ef23.png)
+
+
 #### coef= -0.1   sedentary minutes vs calories
 
 ```
@@ -745,7 +750,7 @@ c4 <- cor.test(merge_data$sedentary_minutes, merge_data$calories,
 c4
 ```
 
-
+![sedentaryminute vs calories](https://user-images.githubusercontent.com/108648130/177873237-107de60a-c492-4d74-be1f-90462544be4a.png)
 
 
 

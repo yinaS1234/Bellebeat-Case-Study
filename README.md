@@ -7,6 +7,7 @@
 
 ##### [Tableau Story Presentation to Skateholders](https://public.tableau.com/app/profile/yina7051/viz/BellabeatCaseStudy_16567238920690/Story1)
 
+Langauage used: R
 
 
 _The case study follows the six steps of data analysis process:_
@@ -65,16 +66,78 @@ A good data source should follow ROCCC guidline.
 
 ## 3. Process
 
-This process aims to clean data and ensuring that it is accurate, relevant, complete and free of outlier through following steps:
+This process aims to clean data to make sure it is accurate, relevant, complete and free of outlier by the following steps:
 
    - Explore and observe data
 
-   - Check for and treat missing or null values
+   - Identify and treat missing, null values and duplicates
 
 
-   - Transform data — format data type
+   - Transform data — format data type, consistent column names, create one merged file
 
    - Perform preliminary statistical analysis
+
+
+### install various R packages
+
+install.packages("tidyverse")
+install.packages("ggplot2")
+install.packages("ggpubr")
+
+library(tidyverse)
+library(ggplot2)
+library(ggpubr)
+
+
+# exploring data. read following dataframe for our analysis
+
+dailyActivity <- read_csv("bellebeat data/Fitabase Data 4.12.16-5.12.16/dailyActivity_merged.csv")
+View(dailyActivity)
+
+dailyCalories <- read_csv("bellebeat data/Fitabase Data 4.12.16-5.12.16/dailyCalories_merged.csv")
+View(dailyCalories)
+
+dailyIntensities <- read_csv("bellebeat data/Fitabase Data 4.12.16-5.12.16/dailyIntensities_merged.csv")
+View(dailyIntensities)
+
+dailySteps <- read_csv("bellebeat data/Fitabase Data 4.12.16-5.12.16/dailySteps_merged.csv")
+View(dailySteps)
+
+sleepDay <- read_csv("bellebeat data/Fitabase Data 4.12.16-5.12.16/sleepDay_merged.csv")
+View(sleepDay)
+
+weightLogInfo <- read_csv("bellebeat data/Fitabase Data 4.12.16-5.12.16/weightLogInfo_merged.csv")
+View(weightLogInfo)
+
+
+# closer look at data
+summary(dailyActivity)
+str(dailyActivity)
+
+summary(dailyCalories)
+str(dailyCalories)
+
+summary(dailyIntensities)
+str(dailyIntensities)
+
+summary(dailySteps)
+str(dailySteps)
+
+summary(sleepDay)
+str(sleepDay)
+
+summary(weightLogInfo)
+str(weightLogInfo)
+
+#distinct entries in all columns
+
+sapply(dailyActivity, function(x) length(unique(x)))
+sapply(dailyCalories, function(x) length(unique(x)))
+sapply(dailyIntensities, function(x) length(unique(x)))
+sapply(dailySteps, function(x) length(unique(x)))
+sapply(sleepDay, function(x) length(unique(x)))
+sapply(weightLogInfo, function(x) length(unique(x)))
+
 
 
 ## 4. Analyze

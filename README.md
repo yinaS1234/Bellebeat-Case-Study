@@ -132,6 +132,9 @@ str(sleepDay)
 summary(weightLogInfo)
 str(weightLogInfo)
 ```
+<img width="473" alt="Screen Shot 2022-07-07 at 11 04 45 AM" src="https://user-images.githubusercontent.com/108648130/177840310-7be141ca-6a63-4014-97bc-86c77bb09493.png">
+
+<img width="502" alt="Screen Shot 2022-07-07 at 11 05 06 AM" src="https://user-images.githubusercontent.com/108648130/177840316-b684f47f-53ab-4453-8d48-633aaa493957.png">
 
 #### check distinct entries in all columns
 

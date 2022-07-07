@@ -168,10 +168,11 @@ There are 33 unique IDs in dailyActivity, 24 unique IDs in sleepDay, 8 unique ID
 
 -6. Create one merge file, clean merge file and then export to tableau for viz
 
-```
+
 After above data exporation, file dailyActivity, sleepDay and weightLogInfor will be used for this exercise.
 
 
+```
 daily_activity <- clean_names(dailyActivity) %>% 
   remove_empty(which = c("rows")) %>% 
   remove_empty(which = c("cols")) %>% 
@@ -180,7 +181,9 @@ daily_activity <- clean_names(dailyActivity) %>%
 duplicated(daily_activity)
 ```
 
-duplicated(daily_activity)
+
+```
+>duplicated(daily_activity)
 
   [1] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
  [11] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
@@ -276,12 +279,14 @@ duplicated(daily_activity)
 [911] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
 [921] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
 [931] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+```
 
 The result shows no ducplicates in dailyActivity
 
 ```
 daily_activity$date <- as.Date(daily_activity$date, format="%m/%d/%Y")
 daily_activity$weekday <- wday(daily_activity$date, label=TRUE)
+```
 
 ```
 sleep_day <- clean_names(sleepDay) %>%
@@ -291,6 +296,7 @@ duplicated(sleep_day)
 ```
 
 
+```
 > duplicated(sleep_day)  
   [1] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
  [11] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
@@ -334,8 +340,9 @@ duplicated(sleep_day)
 [391] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
 [401] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
 [411] FALSE FALSE FALSE
+```
 
-
+The"TRUE" shows there is 3 duplicates, use distinct() to treat it and  extract out the unique values.
 
 
 ```
@@ -343,15 +350,29 @@ sleep_Day <- distinct(sleep_day) %>%
   rename(date=sleep_day)
 
 sleep_Day$date <-as.Date(sleep_Day$date, format="%m/%d/%Y")
-
+```
+```
 weight_Log <- clean_names(weightLogInfo) %>% 
   remove_empty(which = c("rows")) %>% 
   remove_empty(which = c("cols"))
 
 duplicated(weight_Log)
+```
+```
+> duplicated(weight_Log)
+ [1] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+[11] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+[21] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+[31] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+[41] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+[51] FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+[61] FALSE FALSE FALSE FALSE FALSE FALSE FALSE
+```
+
+```
 weight_Log$date <- as.Date(weight_Log$date, format="%m/%d/%Y")
 
-
+```
 
 merge_data1 <-merge(daily_activity,sleep_Day,by=c("id","date"), all=TRUE)
 merge_data <- merge(merge_data1,weight_Log,by=c("id","date"), all=TRUE)

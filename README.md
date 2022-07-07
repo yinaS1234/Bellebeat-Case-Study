@@ -79,7 +79,7 @@ This process aims to clean data to make sure it is accurate, relevant, complete 
 
 
 ### install various R packages
-
+```
 install.packages("tidyverse")
 install.packages("ggplot2")
 install.packages("ggpubr")
@@ -87,7 +87,7 @@ install.packages("ggpubr")
 library(tidyverse)
 library(ggplot2)
 library(ggpubr)
-
+```
 
 # exploring data. read following dataframe for our analysis
 

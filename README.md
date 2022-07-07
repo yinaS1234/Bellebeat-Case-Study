@@ -24,7 +24,7 @@ _The case study follows the six steps of data analysis process:_
 ### [Analyze](#4-analyze)
 ### [Share](#5-share)
 ### [Act](#6-act)
-
+### [Cited](-cited)
 ## Introduction
 Bellabeat, a high-tech manufacturer of health-focused products for women. Bellabeat is a successful small company, but they have the potential to become a larger player in the
 global smart device market. I've been asked to focus on one of Bellabeat’s products and analyze smart device data to gain insight into how consumers are using their smart devices. These insights I discover will help guide company marketing strategy.
@@ -906,7 +906,7 @@ Since both Fitbit and Bellebeat are in the similar sector- high tech health focu
 
 
 
-Cited
+## Cited
 
 <img width="1110" alt="Screen Shot 2022-07-07 at 3 41 52 PM" src="https://user-images.githubusercontent.com/108648130/177883304-b2d741cd-e073-4931-bed7-cc010b106135.png">
 

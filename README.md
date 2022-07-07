@@ -78,7 +78,7 @@ This process aims to clean data to make sure it is accurate, relevant, complete 
    - Perform preliminary statistical analysis
 
 
-### install various R packages
+#### install various R packages
 ```
 install.packages("tidyverse")
 install.packages("ggplot2")
@@ -88,13 +88,10 @@ library(tidyverse)
 library(ggplot2)
 library(ggpubr)
 ```
-![image](https://github.com/yinaS1234/Bellebeat-Case-Study/blob/main/Screen%20Shot%202022-07-06%20at%206.23.09%20PM.png)
 
 
-<img width="1246" alt="Screen Shot 2022-07-06 at 6 23 09 PM" src="https://user-images.githubusercontent.com/108648130/177672009-a56c2d11-0aa0-40d1-975c-555eb67bd6eb.png">
 
-
-# exploring data. read following dataframe for our analysis
+#### exploring data. import the following dataframes for our analysis
 ```
 dailyActivity <- read_csv("bellebeat data/Fitabase Data 4.12.16-5.12.16/dailyActivity_merged.csv")
 View(dailyActivity)
@@ -115,7 +112,7 @@ weightLogInfo <- read_csv("bellebeat data/Fitabase Data 4.12.16-5.12.16/weightLo
 View(weightLogInfo)
 ```
 
-# closer look at data
+#### closer look at data, check the max, min, mean,number of rows, columns, data type
 ```
 summary(dailyActivity)
 str(dailyActivity)
@@ -135,7 +132,9 @@ str(sleepDay)
 summary(weightLogInfo)
 str(weightLogInfo)
 ```
-#distinct entries in all columns
+
+#### check distinct entries in all columns
+
 ```
 sapply(dailyActivity, function(x) length(unique(x)))
 sapply(dailyCalories, function(x) length(unique(x)))
@@ -145,6 +144,16 @@ sapply(sleepDay, function(x) length(unique(x)))
 sapply(weightLogInfo, function(x) length(unique(x)))
 
 ```
+
+There are 33 unique IDs, 24 unique IDs in sleepDay, 8 unique IDs in weightlogInfor
+
+
+
+
+
+
+
+
 
 ## 4. Analyze
 A summary of your analysis

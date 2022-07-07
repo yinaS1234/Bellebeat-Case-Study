@@ -10,6 +10,8 @@
 Langauage used: R
 
 
+![Picture1](https://user-images.githubusercontent.com/108648130/177882491-27c2cc34-99cd-408f-abd7-3a864753578a.png)
+
 
 
 _The case study follows the six steps of data analysis process:_

@@ -693,7 +693,7 @@ The summary shows:
 
 Q1. more active, more calories burn?
 
-## coeff of very active minutes vs calories 0.62
+#### coeff of very active minutes vs calories 0.62
 ```
 ggscatter(merge_data, x = "very_active_minutes", y = "calories", 
           add = "reg.line", conf.int = TRUE, 
@@ -709,8 +709,8 @@ c1
 
 
 
-## coef=0.3 fairly_active_minutes vs calories
-
+#### coef=0.3 fairly_active_minutes vs calories
+```
 ggscatter(merge_data, x = "fairly_active_minutes", y = "calories", 
           add = "reg.line", conf.int = TRUE, 
           cor.coef = TRUE, cor.method = "pearson",
@@ -718,9 +718,12 @@ ggscatter(merge_data, x = "fairly_active_minutes", y = "calories",
 c2 <- cor.test(merge_data$fairly_active_minutes, merge_data$calories, 
                method = "pearson")
 c2
+```
 
-##  coef=0.29 lightly_active_minutes vs calories
 
+####  coef=0.29 lightly_active_minutes vs calories
+
+```
 ggscatter(merge_data, x = "lightly_active_minutes", y = "calories", 
           add = "reg.line", conf.int = TRUE, 
           cor.coef = TRUE, cor.method = "pearson",
@@ -728,10 +731,11 @@ ggscatter(merge_data, x = "lightly_active_minutes", y = "calories",
 c3 <- cor.test(merge_data$lightly_active_minutes, merge_data$calories, 
                method = "pearson")
 c3
+```
 
+#### coef= -0.1   sedentary minutes vs calories
 
-## coef= -0.1   sedentary minutes vs calories
-
+```
 ggscatter(merge_data, x = "sedentary_minutes", y = "calories", 
           add = "reg.line", conf.int = TRUE, 
           cor.coef = TRUE, cor.method = "pearson",
@@ -739,6 +743,8 @@ ggscatter(merge_data, x = "sedentary_minutes", y = "calories",
 c4 <- cor.test(merge_data$sedentary_minutes, merge_data$calories, 
                method = "pearson")
 c4
+```
+
 
 
 

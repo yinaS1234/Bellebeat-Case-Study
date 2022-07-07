@@ -156,6 +156,11 @@ There are 33 unique IDs in dailyActivity, 24 unique IDs in sleepDay, 8 unique ID
 
 #### Data cleaning and manipulation
 
+
+After above data exporation, file dailyActivity, sleepDay and weightLogInfor will be used for this exercise.
+
+
+
 -1.Clean_names() function makes sure that the column names are unique and consistent, contains only characters, numbers, and underscores in the names.
 
 -2.Remove_empty() remove null value in all the rows and columns
@@ -169,7 +174,7 @@ There are 33 unique IDs in dailyActivity, 24 unique IDs in sleepDay, 8 unique ID
 -6. Create one merge file, clean merge file and then export to tableau for viz
 
 
-After above data exporation, file dailyActivity, sleepDay and weightLogInfor will be used for this exercise.
+
 
 
 ```
@@ -574,12 +579,15 @@ ggplot(data=merge_data, aes(x=weekday))+
   geom_bar(fill="steelblue")
 ```
 
+![Rplot](https://user-images.githubusercontent.com/108648130/177868458-f8e597b5-9147-4c2d-9f88-58ffad5f39b8.png)
 
-#### active minutes
 
-#### total steps
 
-#### sleep
+#### Active Minutes
+
+#### Total Steps
+
+#### Sleep
 
 
 

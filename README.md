@@ -804,12 +804,33 @@ tableau viz
 
 
 
-
-
-
 #### Sleep
 
+Q.more active, more sleep? 
 
+
+## coeff of sedentary minutes vs sleep is -0.6
+ggscatter(merge_data, x = "sedentary_minutes", y = "total_minutes_asleep", 
+          add = "reg.line", conf.int = TRUE, 
+          cor.coef = TRUE, cor.method = "pearson",
+          xlab = "SedentaryMinutes", ylab = "TotalMinutesAsleep")
+
+s4 <- cor.test(merge_data$sedentary_minutes, merge_data$total_minutes_asleep, 
+               method = "pearson")
+s4
+
+
+merge_data$total_active_minutes <- merge_data$very_active_minutes+merge_data$lightly_active_minutes+merge_data$fairly_active_minutes
+
+## coeff of total active minutes vs sleep is -0.069
+ggscatter(merge_data, x = "total_active_minutes", y = "total_minutes_asleep", 
+          add = "reg.line", conf.int = TRUE, 
+          cor.coef = TRUE, cor.method = "pearson",
+          xlab = "TotalActiveMinutes", ylab = "TotalMinutesAsleep")
+
+s5 <- cor.test(merge_data$total_active_minutes, merge_data$total_minutes_asleep, 
+               method = "pearson")
+s5
 
 
 

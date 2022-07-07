@@ -847,6 +847,7 @@ s5 <- cor.test(merge_data$total_active_minutes, merge_data$total_minutes_asleep,
 s5
 ```
 
+
 ![totalactiveminute vs sleep](https://user-images.githubusercontent.com/108648130/177878440-ba1e14c4-0005-4a15-97ee-d0d13c78217b.png)
 
 
@@ -860,7 +861,9 @@ However, it shows users who spend less time in sedentary minute tends to have mo
 
 ## 5. Share 
 
-[Tableau Dashboard]
+Tableau Dashboard
+
+
 
 
 

@@ -1,4 +1,6 @@
 # CASE STUDY: Bellabeat Data Analysis-Google Data Analytics Capstone
+![1618610453720](https://user-images.githubusercontent.com/108648130/177882667-6da1eb2a-979b-4054-8816-9d97b9f65bdc.jpeg)
+
 ##### Author: Yina Qiao
 
 ##### Date: July 6, 2022

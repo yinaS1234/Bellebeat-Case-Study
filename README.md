@@ -863,6 +863,8 @@ However, it shows users who spend less time in sedentary minute tends to have mo
 
 Tableau Dashboard
 
+<img width="1305" alt="Screen Shot 2022-07-07 at 3 07 40 PM" src="https://user-images.githubusercontent.com/108648130/177880118-8fe2ba51-f73c-4e08-bd06-a834f1d00619.png">
+
 
 
 

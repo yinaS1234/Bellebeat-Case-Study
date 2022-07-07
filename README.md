@@ -817,7 +817,7 @@ tableau viz
 Q.more active, more sleep? 
 
 
-## coeff= -0.6  sedentary minutes vs sleep 
+#### coeff= -0.6  sedentary minutes vs sleep 
 
 ```
 ggscatter(merge_data, x = "sedentary_minutes", y = "total_minutes_asleep", 
@@ -834,7 +834,7 @@ s4
 ![sedentary minute vs sleep](https://user-images.githubusercontent.com/108648130/177878437-cb892e0f-f102-40ac-9e8e-487fe2030d45.png)
 
 
-```
+
 
 
 Create a new column by combining "very active" " lightly active" "fairly active" into "total active minutes"
@@ -843,8 +843,10 @@ Create a new column by combining "very active" " lightly active" "fairly active"
 
 ```
 merge_data$total_active_minutes <- merge_data$very_active_minutes+merge_data$lightly_active_minutes+merge_data$fairly_active_minutes
+```
 
-## coeff= -0.069  total active minutes vs sleep
+#### coeff= -0.069  total active minutes vs sleep
+
 ```
 ggscatter(merge_data, x = "total_active_minutes", y = "total_minutes_asleep", 
           add = "reg.line", conf.int = TRUE, 

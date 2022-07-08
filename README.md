@@ -11,6 +11,7 @@
 
 Langauage used: R
 
+# How Can a Wellness Technology Company Play It Smart? 
 
 ![Picture1](https://user-images.githubusercontent.com/108648130/177882491-27c2cc34-99cd-408f-abd7-3a864753578a.png)
 
